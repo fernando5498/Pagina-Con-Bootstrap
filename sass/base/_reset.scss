@@ -33,8 +33,13 @@ body {
 
 h2,
 h3,
-h4 {
+h4,
+h5 {
     text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1rem;
 }
 
 p {
