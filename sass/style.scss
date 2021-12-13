@@ -1,0 +1,13 @@
+/* ------------------------ BASE ------------------------ */
+
+@import "base/variables";
+@import"base/reset";
+
+/* -------------------- COMPLEMENTOS -------------------- */
+
+@import "complementos/mixing";
+
+/* ------------------------ PAGE ------------------------ */
+
+@import "pagina/header";
+@import "pagina/main";

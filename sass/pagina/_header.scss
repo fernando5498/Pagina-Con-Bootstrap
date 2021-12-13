@@ -1,0 +1,51 @@
+// whrite-mode = cambia de orientacion las letra
+.sideways {
+    writing-mode: vertical-lr;
+    display: block;
+    margin: 3.5rem 0px;
+    transform: rotate(-180deg);
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.bg-light {
+    background: $color-light;
+}
+
+.btn-primary {
+    background: transparent;
+    border: 1px solid $color-light;
+    border-radius: 0;
+    color: $color-light;
+    padding: .7rem 2.5rem;
+    font-size: 1.25rem;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.btn-primary:hover {
+    background: $color-light;
+    color: $color-dark;
+    border: 1px solid $color-light;
+}
+
+@media (max-width:1200px) {
+    .sideways {
+        margin: 2rem 0px;
+    }
+    .lead-xl {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:900px) {
+    .content {
+        padding: 5rem;
+    }
+}
