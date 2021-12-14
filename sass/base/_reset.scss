@@ -1,3 +1,13 @@
+/* ----------------------- COLORS ----------------------- */
+
+$color-dark:#1b1b1b;
+$color-light:white;
+$color-gold:#c7b8a5;
+$color-ultra-dark:#131313;
+$text-color:#898989;
+
+/* -------------------- RESET GLOBALS ------------------- */
+
 * {
     padding: 0;
     margin: 0;
@@ -20,14 +30,6 @@
 
 ul {
     padding: 0;
-}
-
-.lead-xl {
-    font-size: 1.75rem;
-}
-
-.border-right {
-    border-right: 1px solid rgba(256, 256, 256, .1) !important;
 }
 
 li {
@@ -74,6 +76,13 @@ footer {
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
+
+/* ------------------- RESET BOOTSTRAP ------------------ */
+
+.border-right {
+    border-right: 1px solid rgba(256, 256, 256, .1) !important;
+}
+
 .btn-primary {
     background: transparent;
     border: 1px solid $color-light;
@@ -100,4 +109,18 @@ footer {
     border-color: white !important;
     border: none!important;
     box-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background: $color-light;
+    color: $color-dark;
+    border: 1px solid $color-light;
+}
+
+#offcanvasRightLabel {
+    margin: 0;
+}
+
+.bg-light {
+    background: $color-light;
 }

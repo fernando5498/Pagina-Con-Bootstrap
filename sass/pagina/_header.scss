@@ -12,8 +12,8 @@
     -o-transform: rotate(-180deg);
 }
 
-#offcanvasRightLabel {
-    margin: 0;
+.lead-xl {
+    font-size: 1.75rem;
 }
 
 #aside {
@@ -22,10 +22,6 @@
     -moz-transition: all 300ms;
     -ms-transition: all 300ms;
     -o-transition: all 300ms;
-}
-
-.bg-light {
-    background: $color-light;
 }
 
 .go-top {
@@ -50,12 +46,6 @@
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-}
-
-.btn-primary:hover {
-    background: $color-light;
-    color: $color-dark;
-    border: 1px solid $color-light;
 }
 
 @media (min-width:1200px) {
