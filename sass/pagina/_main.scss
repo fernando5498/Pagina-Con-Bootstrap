@@ -24,7 +24,7 @@
 
 .carousel-item img {
     max-height: 100vh;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 #carouselExampleSlidesOnly {
@@ -38,4 +38,15 @@
 
 #exampleFormControlTextarea1 {
     height: 160px;
+}
+
+.redes-principal {
+    li {
+        display: flex;
+        align-items: center;
+        a {
+            margin-left: 2px;
+            font-size: .7rem;
+        }
+    }
 }

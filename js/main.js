@@ -2,6 +2,9 @@ let asideRedes = document.getElementById('aside')
 let subir = document.querySelector('.go-top')
 
 
+
+
+
 subir.addEventListener('click', scrollTop)
 
 function scrollTop() {
@@ -10,6 +13,7 @@ function scrollTop() {
         window.scrollTo(0, 0)
     } else {
         window.scrollTo(0, document.body.scrollHeight);
+
     }
 }
 

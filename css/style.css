@@ -8,6 +8,19 @@
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
 ul {
   padding: 0;
 }
@@ -49,6 +62,8 @@ p {
 
 a {
   color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -57,7 +72,35 @@ a:hover {
 }
 
 footer {
-  background: #131313;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 0;
+  color: white;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.25rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.btn-primary:focus {
+  background-color: white !important;
+  border: none !important;
+  box-shadow: none;
+  color: #131313;
+}
+
+.btn-primary:active {
+  background: white;
+  color: #131313;
+  border-color: white !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* -------------------- COMPLEMENTOS -------------------- */
@@ -75,6 +118,10 @@ footer {
   -o-transform: rotate(-180deg);
 }
 
+#offcanvasRightLabel {
+  margin: 0;
+}
+
 #aside {
   transition: all 300ms;
   -webkit-transition: all 300ms;
@@ -87,25 +134,20 @@ footer {
   background: white;
 }
 
-.btn-primary {
-  background: transparent;
-  border: 1px solid white;
-  border-radius: 0;
-  color: white;
-  padding: 0.7rem 2.5rem;
-  font-size: 1.25rem;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-}
-
 .go-top {
   transition: all 500ms;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -ms-transition: all 500ms;
   -o-transition: all 500ms;
+}
+
+.go-top:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 .go-top.active {
@@ -122,6 +164,11 @@ footer {
   border: 1px solid white;
 }
 
+@media (min-width: 1200px) {
+  #header {
+    height: 100vh !important;
+  }
+}
 @media (max-width: 1200px) {
   .sideways {
     margin: 2rem 0px;
@@ -132,8 +179,34 @@ footer {
   }
 }
 @media (max-width: 900px) {
-  .content {
-    padding: 5rem;
+  .menu-redes {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 767px) {
+  #aside {
+    z-index: 10;
+    bottom: 0;
+    flex-direction: row !important;
+    height: 10% !important;
+    width: 100%;
+    background: #131313;
+  }
+  #aside .menu-redes {
+    font-size: 0.8rem;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  #aside .menu-redes .sideways {
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .menu-redes {
+    font-size: 0.7rem !important;
   }
 }
 .staks div {
@@ -160,7 +233,7 @@ footer {
 
 .carousel-item img {
   max-height: 100vh;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #carouselExampleSlidesOnly .carousel-inner .carousel-item img {
@@ -170,6 +243,15 @@ footer {
 
 #exampleFormControlTextarea1 {
   height: 160px;
+}
+
+.redes-principal li {
+  display: flex;
+  align-items: center;
+}
+.redes-principal li a {
+  margin-left: 2px;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
