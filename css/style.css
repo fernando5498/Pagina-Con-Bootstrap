@@ -11,6 +11,7 @@
 
 ::-webkit-scrollbar {
   background: transparent;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -127,6 +128,7 @@ footer {
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
+  font-size: 0.8rem;
 }
 
 .lead-xl {
